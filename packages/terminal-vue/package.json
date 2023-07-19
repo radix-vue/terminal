@@ -11,7 +11,7 @@
   "dependencies": {
     "@vueuse/core": "^10.2.1",
     "class-variance-authority": "^0.7.0",
-    "radix-vue": "^0.1.7",
+    "radix-vue": "^0.1.8",
     "vue": "^3.3.4"
   },
   "devDependencies": {

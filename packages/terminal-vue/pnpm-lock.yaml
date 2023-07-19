@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.7.0
     version: 0.7.0
   radix-vue:
-    specifier: ^0.1.7
-    version: 0.1.7(vue@3.3.4)
+    specifier: ^0.1.8
+    version: 0.1.8(vue@3.3.4)
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -1003,8 +1003,8 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /radix-vue@0.1.7(vue@3.3.4):
-    resolution: {integrity: sha512-q8d/UqPzDJWPQsy/Puw5vLH6JwTylRwxbepgqyu81RcearoU+tSVcA5hjK5h+blPK00iCNuOQCRl+lh4jYcjcQ==}
+  /radix-vue@0.1.8(vue@3.3.4):
+    resolution: {integrity: sha512-X9XTSKCON/qb7yZcXf5VWyH5qS16QjDziJwNtZfLzI3g2732XinmTRW9nP9m8HWxkTufEDX534g2hSLLezxHrw==}
     dependencies:
       '@floating-ui/dom': 1.4.5
       '@floating-ui/vue': 1.0.2(vue@3.3.4)
