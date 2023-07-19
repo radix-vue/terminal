@@ -15,26 +15,26 @@ export const AccordionClass = cva("", {
 		},
 	},
 	compoundVariants: [
-		{ variant: "default", component: "root", class: "w-[300px]" },
-		{ variant: "default", component: "item", class: "border-b w-full" },
+		{ variant: "default", component: "root", className: "w-[300px]" },
+		{ variant: "default", component: "item", className: "border-b w-full" },
 		{
 			variant: "default",
 			component: "trigger",
-			class:
+			className:
 				"flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
 		},
 		{
 			variant: "default",
 			component: "content",
-			class:
+			className:
 				"overflow-hidden text-sm data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up",
 		},
 		{
 			variant: "default",
 			component: "contentWrapper",
-			class: "overflow-hidden text-sm",
+			className: "overflow-hidden text-sm",
 		},
-		{ variant: "default", component: "header", class: "flex" },
+		{ variant: "default", component: "header", className: "flex" },
 	],
 	defaultVariants: {
 		variant: "default",
@@ -59,18 +59,18 @@ export const SwitchClass = cva("", {
 		},
 	},
 	compoundVariants: [
-		{ size: 1, component: "root", class: "w-[25px] h-[15px]" },
-		{ size: 2, component: "root", class: "w-[45px] h-[25px]" },
+		{ size: 1, component: "root", className: "w-[25px] h-[15px]" },
+		{ size: 2, component: "root", className: "w-[45px] h-[25px]" },
 		{
 			size: 1,
 			component: "thumb",
-			class:
+			className:
 				"w-[13px] h-[13px] translate-x-[1px] data-[state=checked]:translate-x-[11px]",
 		},
 		{
 			size: 2,
 			component: "thumb",
-			class:
+			className:
 				"w-[21px] h-[21px] translate-x-0.5 data-[state=checked]:translate-x-[22px]",
 		},
 	],
