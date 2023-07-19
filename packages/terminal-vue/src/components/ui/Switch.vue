@@ -3,7 +3,12 @@ import { SwitchRoot, SwitchThumb } from 'radix-vue'
 import { SwitchClass, type SwitchClassProps } from "@/components/ui/cva"
 import { useVModel } from "@vueuse/core";
 
-type SwitchProps = InstanceType<typeof SwitchRoot>["$props"] & SwitchClassProps;
+interface SwitchProps {
+  variant?: SwitchClassProps["variant"];
+  size?: SwitchClassProps["size"];
+  defaultOpen?: string;
+  open: boolean;
+}
 
 const props = withDefaults(defineProps<SwitchProps>(), {
   open: undefined,
@@ -18,7 +23,10 @@ const open = useVModel(props, "open", emit, {
 </script>
 
 <template>
-  <SwitchRoot v-model:open="open" :class="SwitchClass({ size, variant, component: 'root' })">
+  <SwitchRoot
+    v-model:open="open"
+    :class="SwitchClass({ size, variant, component: 'root' })"
+  >
     <SwitchThumb :class="SwitchClass({ size, variant, component: 'thumb' })" />
   </SwitchRoot>
 </template>
